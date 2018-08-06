@@ -4,14 +4,19 @@ import matplotlib.pyplot as plt
 
 basePath =  pathlib.Path.cwd()
 fileName = basePath / 'learn OpenCV/media/smallbeach.jpg'
-img = cv2.imread(str(fileName), cv2.IMREAD_COLOR)
+img1 = cv2.imread(str(fileName), cv2.IMREAD_COLOR)
+fileName = basePath / 'learn OpenCV/media/smallbeach.jpg'
+img2 = cv2.imread(str(fileName), cv2.IMREAD_GRAYSCALE)
 
-px = img[55,55] #specific pixel color
+# add = img1 + img2 # no oppacity
+# add = cv2.add(img1,img2) # adds colors, if over 255 set to 255
+# weighted = cv2.addWeighted(img1,0.6,img2,0.4,0) #with oppacity changed
 
-#img[100:150,100:150] = [255,255,255]
+# rows,cols,channels = img2.shape
+# roi = img1[0:rows,0:cols]
 
-location = img[125:175,125:175]
-img[0:50,0:50] = location
+
+
 
 cv2.imshow('image', img)
 cv2.waitKey(0)
