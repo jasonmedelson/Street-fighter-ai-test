@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 basePath =  pathlib.Path.cwd()
 # print(basePath)
-fileName = basePath / 'learn OpenCV/images/smallbeach.jpg'
+fileName = basePath / 'learn OpenCV/media/smallbeach.jpg'
 # print(type(fileName.resolve()))
 # print(fileName.e1ists())
 # img = cv2.imread("C:\\Users\\Jason\\Desktop\\machine learning ai\\learn OpenCV\\images\\smallbeach.jpg", cv2.IMREAD_GRAYSCALE)

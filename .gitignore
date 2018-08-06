@@ -22,3 +22,5 @@ $RECYCLE.BIN/
 # Operating System Files
 # =========================
 *.jpg
+*.avi
+learn OpenCV/media/drive.mp4
