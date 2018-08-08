@@ -9,7 +9,7 @@ S = 0x1F
 D = 0x20
 
 
-# C struct redefinitions 
+# C struct redefinitions
 PUL = ctypes.POINTER(ctypes.c_ulong)
 class KeyBdInput(ctypes.Structure):
     _fields_ = [("wVk", ctypes.c_ushort),
@@ -60,7 +60,6 @@ def ReleaseKey(hexKeyCode):
 
 if __name__ == '__main__':
     while (True):
-        PressKey(0x11)
-        time.sleep(1)
-        ReleaseKey(0x11)
-        time.sleep(1)
+        PressKey(0x20)
+        time.sleep(4)
+        ReleaseKey(0x20)
